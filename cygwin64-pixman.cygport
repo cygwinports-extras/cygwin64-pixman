@@ -1,0 +1,15 @@
+CROSS_HOST="x86_64-pc-cygwin"
+ORIG_PN="pixman"
+inherit cross xorg
+
+NAME="cygwin64-pixman"
+VERSION=0.28.2
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="pixman library for Cygwin 64bit toolchain"
+DESCRIPTION="pixman is a library that provides low-level pixel manipulation
+features such as image compositing and trapezoid rasterization.  It is used
+primarily by the cairo library and the X server."
+PATCH_URI="0.20.0-gcc4-visibility.patch"
+
+KEEP_LA_FILES="none"
